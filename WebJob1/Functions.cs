@@ -14,7 +14,7 @@ namespace WebJob1
         // on an Azure Queue called queue.
         public static void ProcessQueueMessage([QueueTrigger("queue")] string message, TextWriter log)
         {
-            typolog.WriteLine("WEB JOb" + message);
+           log.WriteLine("WEB JOb" + message);
         }
     }
 }
